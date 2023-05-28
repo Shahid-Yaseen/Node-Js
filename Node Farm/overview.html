@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+        html{
+            font-size: 62.5%;
+        }
+        body {
+        padding: 5rem 5rem 10rem;
+        line-height: 1.7;
+        font-family: 'Nunito Sans', sans-serif;
+        color: #555;
+        min-height: 100vh;
+        background: linear-gradient(to bottom right, #9be15d, #00e3ae);
+      }
+        .overview{
+            display: flex;
+            justify-content: center;
+            margin-top: 10rem;
+            transform: skewY(-12deg);
+        }
+        h1{
+            color: #fff;
+            letter-spacing: 2;
+            font-size: 4.8rem;
+            font-family: 'Megrim', cursive;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+        }
+        .product-template{
+        margin-top: 6rem;
+        background-color: #fff;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       height: 100px;
+       width: 1080px;
+       transform: skewX(-24deg);
+       box-shadow: 0 2rem 6rem 1rem rgba(0, 0, 0, 0.15);
+       transition: all 0.3s;
+      }
+      .product-template:hover{
+        transform: skewX(-24deg) scale(1.1);
+        transition: all 0.3s;
+      }
+       .card-emoji{
+       transform: skewX(27deg);
+        font-size: 40px;
+        letter-spacing: -40px;
+        padding-right: 5rem;       
+        padding-left: 2rem;       
+       }
+       .product-name{
+        height: 100px;
+        font-size: 26px;
+        padding: 3rem 2rem 2rem;
+        color: #fff;
+        font-family: 'Megrim', cursive;
+        font-weight: 700;
+        letter-spacing: 2px;
+        background: linear-gradient(to bottom, #9be15d, #00e3ae);
+       }
+       .organic{
+        font-size: 20px;
+        color:#00e3ae;
+        font-weight: 600;
+        text-transform: uppercase;    
+        padding: 25px 25px 0 0;
+       }
+       .quantity{
+        font-size: 20px;
+        padding: 25px 25px 0 0;
+       }
+       .price{
+        font-weight: 600;
+        font-size: 20px;
+        padding: 25px 25px 0 0;
+       }
+       .detail{
+         font-size: 26px;        
+        letter-spacing: 2px;             
+        color: #fff;
+        text-decoration: none;
+       }
+       .detail-link{
+        height: 100px;
+        padding: 3rem 2rem 2rem;
+        background-color: #9be15d;
+        justify-self: center;
+        align-items: center;
+        margin-right: -60px;
+       }
+       .detail-box{
+        margin-left: 3.8rem;
+        align-self: stretch;
+        padding-top: 1.2rem;
+        transform: skewX(-8deg);
+        border-right: 1px solid lightgray;
+        justify-self: center;
+        text-align: center;
+        align-items: center;
+       }
+       .price-box{
+        border: none;
+       }
+       .detail-link:hover{
+          cursor: pointer;
+       }
+       .hidden{
+        display: none;
+        }
+       
+    </style>
+    <title>Node-Farm</title>
+</head>
+<body>
+    <div class="overview"> <h1>🌽 Node Farm 🥦</h1></div>
+     {%OVERVIEW%}
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+        html{
+            font-size: 62.5%;
+        }
+        body {
+        padding: 5rem 5rem 10rem;
+        line-height: 1.7;
+        font-family: 'Nunito Sans', sans-serif;
+        color: #555;
+        min-height: 100vh;
+        background: linear-gradient(to bottom right, #9be15d, #00e3ae);
+      }
+        .overview{
+            display: flex;
+            justify-content: center;
+            margin-top: 10rem;
+            transform: skewY(-12deg);
+        }
+        h1{
+            color: #fff;
+            letter-spacing: 2;
+            font-size: 4.8rem;
+            font-family: 'Megrim', cursive;
+        }
+        .product-detail{
+            margin: 10rem 20rem 0 30rem;
+            background-color: #fff;
+            width: 600px;
+            height: 700px;
+            position: relative;
+        }
+        .emojis::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(to left bottom, #9be15d, #00e3ae);
+            opacity: 0.5;
+            z-index: 100;
+        }
+        .emojis{
+         position: relative;
+         height: 230px;
+         overflow: hidden;
+        }
+        .emoji-pic-1 {
+        position: absolute;
+        top: -9rem;
+        left: 2rem;
+        font-size: 16rem;
+        }
+
+        .emoji-pic-2 {
+        position: absolute;
+        top: 8rem;
+        left: 2rem;
+        font-size: 12rem;
+        }
+        .emoji-pic-3 {
+        position: absolute;
+        top: 5rem;
+        left: 13rem;
+        font-size: 15rem;
+        }
+        .emoji-pic-4 {
+        position: absolute;
+        top: -9rem;
+        right: 15rem;
+        font-size: 14rem;
+        }
+        .emoji-pic-5 {
+        position: absolute;
+        top: -6rem;
+        left: 40rem;
+        font-size: 13rem;
+        }
+        .emoji-pic-6 {
+        position: absolute;
+        top: -14rem;
+        left: 10rem;
+        font-size: 15rem;
+        }
+        .emoji-pic-7 {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 15.8rem;
+        }
+        .emoji-pic-8 {
+        position: absolute;
+        top: 4rem;
+        right: 19rem;
+        font-size: 11rem;
+        }
+        .back-link{
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            z-index: 300;
+            text-decoration: none;
+            background-color: #fff;
+            font-size: 1.4rem;
+            padding: 1rem 3rem ;
+            border-radius: 2rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .organic-circle{
+            position: absolute;
+            top: -3.3rem;
+            right: -3.2rem;
+            height: 11rem;
+            background: linear-gradient(to bottom right, #9be15d, #00e3ae);
+            width: 11rem;
+            border-radius: 100%;
+            box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+            text-align: center;
+            z-index: 300;
+             padding-top: 4rem;
+             transform: rotate(20deg);
+            
+        }
+        .organic-text{
+            text-transform: uppercase; 
+            color: white;
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+        .product-name-div{
+            position: absolute;
+            top: 21rem;
+            left: 0;
+            width: inherit;
+            height: 8rem;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            background: linear-gradient(to bottom, #9be15d, #00e3ae);
+            z-index: 300;
+        }
+        .product-name-description{
+            color: #fff;
+            font-family: 'Megrim', cursive;
+            font-size: 3.8rem;
+        }
+        .product-description{
+            margin-top: 8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8rem;
+        }
+        .product-pros{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .product-pros div p{
+            font-size: 2.2rem;
+        }
+        .description{
+            padding: 3rem;
+           font-size: 1.4rem;
+        }
+        .add-btn{
+            position: absolute;
+            top: 57%;
+            left: -5%;
+            width: 110%;
+            height: 7rem;
+            background-color:#79e17b;;
+            font-size: 2.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            transform: skewX(-20deg);
+            box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2); 
+            transition: all 0.3s;
+            text-decoration: none;
+            color: #fff;
+        }
+        .add-btn:hover{
+            cursor: pointer;
+            transform: scale(1.07) skewX(-20deg);
+            transition: all 0.3s;
+        }
+        .hidden{
+        display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="overview"> <h1>🌽 Node Farm 🥦</h1></div>
+    <div class="product-detail">
+        <div class="organic-circle {%ORGANIC%}" ><p class="organic-text">organic</p></div>
+        <div class="product-name-div"><h2 class="product-name-description">{%PRODUCT_NAME%}</h2></div>
+        <a class="add-btn" href="#"> 🛒 Add to shopping card ({%PRICE%}€)</a>
+        <div class="emojis">
+            <a class="back-link" href="/overview">👈  back</a>
+            <p class="emoji-pic-1">{%IMAGE%}</p>
+            <p class="emoji-pic-2">{%IMAGE%}</p>
+            <p class="emoji-pic-3">{%IMAGE%}</p>
+            <p class="emoji-pic-4">{%IMAGE%}</p>
+            <p class="emoji-pic-5">{%IMAGE%}</p>
+            <p class="emoji-pic-6">{%IMAGE%}</p>
+            <p class="emoji-pic-7">{%IMAGE%}</p>
+            <p class="emoji-pic-8">{%IMAGE%}</p>
+        </div>
+        <div class="product-description">
+            <div class="product-pros">
+                <div><p>🌍 From {%FROM%}</p></div>
+                <div><p>❤ {%NUTRIENTS%}</p></div>
+                <div><p>📦 {%QUANTITY%}</p></div>
+                <div><p>🏷 {%PRICE%}/p></div>
+            </div>
+            <p class="description">
+                {%DESCRIPTION%}
+            </p>  
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
